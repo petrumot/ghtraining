@@ -1,0 +1,15 @@
+name: Github Actions Demo
+on: 
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  job1:
+    name: "Display stuff"
+    runs-on: ubuntu-latest
+    steps:
+      - name: dsiplay
+        run: echo "hello world"
+    
